@@ -10,7 +10,7 @@ const RésultatSimulation = ({ montantPrêt, duréePrêt }) => {
   }, [montantPrêt])
 
   return (
-    <div>
+    <div className="simulation-results">
       <p>
         Taux d'Interêt = <span>6 %</span>
         <br />

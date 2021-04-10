@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Logo from "./components/Logo";
 import Intro from "./components/Intro";
 import SimulationPrêt from "./components/SimulationPrêt";
 
@@ -7,7 +8,7 @@ function App() {
   const [showSimulation, setShowSimulation] = useState(false);
   return (
     <div className="App">
-      <h2>Loan Simulator</h2>
+      <Logo/>
       {!showSimulation ? (
         <main>
           <Intro />

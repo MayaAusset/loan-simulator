@@ -3,19 +3,48 @@
 }
 .App {
   margin: 2%;
-  height: 600px;
-  text-align: center;
+  height: 630px;
   color: rgb(24, 55, 83);
   border: 0;
   box-shadow: 2px 2px 5px 5px #f5f5f5;
   border-radius: 15px;
   text-align: center;
-  
+  /* background-color: rgb(245, 243, 251); */
+  background-color:rgb(249, 249, 249);
+}
+img{
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+h2{
+  margin-left: 0;
+  padding: 20px;
 }
 p{
   margin: 3%;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
+}
+.intro-container{
+  padding: 30px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
+  border-radius: 8px;
+  background-color: white;
+}
+.intro-container p{
+  margin: 3% 25%;
+}
+.hand-animation{
+  animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(45px);
+  }
 }
 button{
   margin: 5%;
@@ -32,11 +61,11 @@ button:hover{
 .sliders-container{
   margin: 0% 10%;
   padding: 2%;
-  
   border: 0;
-  box-shadow: 2px 2px 5px 5px #f5f5f5;
-  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
+  border-radius: 8px;
   text-align: center;
+  background-color: white;
 }
 .slider-bar{
   display: flex;
@@ -50,5 +79,14 @@ button:hover{
 span{
   color: rgb(99, 71, 209);
   font-size: 20px;
+}
+.simulation-results{
+  margin: 0% 10%;
+  padding: 5px;
+  border: 0;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgb(245, 243, 251);
 }
 
