@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Slider } from "@material-ui/core";
 
-const PrixSlider = () => {
+const PrixSlider = ({handleMontantPrêt}) => {
     const [prix, setPrix]= useState(1000, 10000);
 
     const updatePrix = (e, data) => {
-        console.log(prix)
         setPrix(data)
     }
     return (
@@ -19,6 +18,7 @@ const PrixSlider = () => {
             step={1000}
             value={prix}
             onChange={updatePrix}
+            handleMontantPrêt={handleMontantPrêt(prix)}
             />
             <p>10 000 €</p>
             </div>

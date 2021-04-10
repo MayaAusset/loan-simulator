@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Slider } from "@material-ui/core";
 
-const DuréeSlider = () => {
+const DuréeSlider = ({handleDuréePrêt}) => {
   const [durée, setdurée] = useState(2, 12);
 
   const updatedurée = (e, data) => {
@@ -20,6 +20,7 @@ const DuréeSlider = () => {
             step={1}
             value={durée}
             onChange={updatedurée}
+            handleDuréePrêt={handleDuréePrêt(durée)}
           />
           <p>12 mois</p>
         </div>
