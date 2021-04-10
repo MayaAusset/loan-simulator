@@ -19,16 +19,13 @@ button:hover{
   background-color: rgb(99, 71, 209, 0.5);
 }
 .sliders-container{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-.slider{
-  width: 50%;
+  margin: 10%;
+  align-items: center;
 }
 .slider-bar{
   display: flex;
   flex-direction: row;
   align-items: center;
+  
 }
 
