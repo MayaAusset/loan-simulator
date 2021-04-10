@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const RésultatSimulation = ({montantPrêt, duréePrêt}) => {
+const RésultatSimulation = ({ montantPrêt, duréePrêt }) => {
+  const [tauxInteret, setTauxInteret] = useState(
+    Math.round((6 / 100) * montantPrêt)
+  );
+
+  useEffect(()=>{
+    setTauxInteret(Math.round((6 / 100) * montantPrêt))
+  }, [montantPrêt])
+
   return (
     <div>
-      <h1>Résultat</h1>
       <p>
-        Taux d'Interêt = 6%
+        Taux d'Interêt = <span>6 %</span>
         <br />
-        Montant total à rembourser = Montant pret * taux d'interet
+        Montant total à rembourser = <span>{montantPrêt + tauxInteret} €</span>
         <br />
-        Cout du crédit = montant total à rembourser - montant du prêt
+        Cout du crédit = <span>{(montantPrêt + tauxInteret) - montantPrêt} €</span>
         <br />
-        Paiement mensuel = montant total à rembourser / durée du prêt
-      </p>
-
-      <p>
-        Avec un prêt de {montantPrêt} € sur une durée de {duréePrêt} mois, le cout de votre crédit
-        serait de cout du crédit, un montant total à rembourser de Montant total
-        à rembourser. Un paiement mensuel de paiement mensuel !
+        Paiement mensuel = <span>{Math.round((montantPrêt + tauxInteret) / duréePrêt)} €</span>
       </p>
     </div>
   );

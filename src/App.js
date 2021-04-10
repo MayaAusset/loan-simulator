@@ -7,7 +7,7 @@ function App() {
   const [showSimulation, setShowSimulation] = useState(false);
   return (
     <div className="App">
-      <h1>Loan Simulator</h1>
+      <h2>Loan Simulator</h2>
       {!showSimulation ? (
         <main>
           <Intro />

@@ -1,9 +1,20 @@
+*{
+  font-family: Assistant, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .App {
-  margin: 5%;
+  margin: 2%;
+  height: 600px;
   text-align: center;
+  color: rgb(24, 55, 83);
+  border: 0;
+  box-shadow: 2px 2px 5px 5px #f5f5f5;
+  border-radius: 15px;
+  text-align: center;
+  
 }
 p{
-  margin: 5%;
+  margin: 3%;
+  font-size: 16px;
   text-align: center;
 }
 button{
@@ -19,13 +30,25 @@ button:hover{
   background-color: rgb(99, 71, 209, 0.5);
 }
 .sliders-container{
-  margin: 10%;
-  align-items: center;
+  margin: 0% 10%;
+  padding: 2%;
+  
+  border: 0;
+  box-shadow: 2px 2px 5px 5px #f5f5f5;
+  border-radius: 15px;
+  text-align: center;
 }
 .slider-bar{
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+}
+.slider-bar p{
+  color: gray;
+  width: 15%;
+}
+span{
+  color: rgb(99, 71, 209);
+  font-size: 20px;
 }
 
