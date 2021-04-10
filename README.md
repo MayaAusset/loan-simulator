@@ -1,7 +1,7 @@
 # Loan Simulator
 
 ## General info 
-This app is a Loan simulator created with create-react-app.
+This app is a loan simulator created with create-react-app.
 
 ## Setup
 To run this project, you will need Node.js and NPM installed.  
