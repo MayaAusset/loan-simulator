@@ -11,7 +11,7 @@ const DuréeSlider = ({handleDuréePrêt}) => {
   return (
     <div>
       <div className="slider">
-        <h4>Je souhaite emprunter sur une durée de {durée} mois</h4>
+        <h4>Je souhaite emprunter sur une durée de <span>{durée} mois</span> </h4>
         <div className="slider-bar">
           <p>2 mois</p>
           <Slider
