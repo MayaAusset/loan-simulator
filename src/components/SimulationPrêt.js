@@ -8,11 +8,11 @@ const SimulationPrêt = () => {
   const [duréePrêt, setDuréePrêt] = useState(2);
 
   const handleMontantPrêt = (montant) => {
-      setMontantPrêt(montant)
+    setMontantPrêt(montant);
   };
 
   const handleDuréePrêt = (durée) => {
-      setDuréePrêt(durée)
+    setDuréePrêt(durée);
   };
 
   return (
