@@ -1,4 +1,4 @@
-*{
+* {
   font-family: Assistant, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .App {
@@ -9,38 +9,38 @@
   box-shadow: 2px 2px 5px 5px #f5f5f5;
   border-radius: 15px;
   text-align: center;
-  background-color:rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249);
 }
-.title{
+.title {
   margin: 0px 0px 20px 0px;
   font-size: 5em;
   font-weight: 900;
   font-family: "Playfair Display";
 }
-.title img{
+.title img {
   padding: 0px 0px 0px 0px;
 }
-h2{
+h2 {
   padding: 20px;
 }
-p{
+p {
   margin: 3%;
   font-size: 16px;
   text-align: left;
 }
-button{
+button {
   margin-top: 150px;
   width: 40%;
   border-radius: 0.375em;
   border: 0;
   background-color: rgb(99, 71, 209);
   color: white;
-  transform: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
-button:hover{
+button:hover {
   background-color: rgb(99, 71, 209, 0.5);
 }
-.sliders-container{
+.sliders-container {
   margin: 0% 10%;
   padding: 2%;
   border: 1px solid rgb(99, 71, 209);
@@ -49,20 +49,20 @@ button:hover{
   text-align: center;
   background-color: white;
 }
-.slider-bar{
+.slider-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.slider-bar p{
+.slider-bar p {
   color: gray;
   width: 15%;
 }
-span{
+span {
   color: rgb(99, 71, 209);
   font-size: 20px;
 }
-.simulation-results{
+.simulation-results {
   display: flex;
   justify-content: space-around;
   margin: 1% 10%;
@@ -74,12 +74,10 @@ span{
   align-items: center;
   background-color: rgb(245, 243, 251);
 }
-.results{
+.results {
   width: 50%;
   margin: 15px;
   border: 0;
   border-radius: 8px;
   box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px;
 }
-
-
