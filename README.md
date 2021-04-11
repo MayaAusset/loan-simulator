@@ -3,6 +3,13 @@
 ## General info 
 This app is a loan simulator created with create-react-app.
 
+## Technologies used 
+-ReactJS  
+-JavaScript  
+-HTML  
+-CSS  
+-Material-UI  
+
 ## Setup
 To run this project, you will need Node.js and NPM installed.  
 You can check if you already have them
@@ -18,9 +25,9 @@ $ cd loanSimulator
 $ npm start
 ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It will run the app in the development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload if you make edits.  
+You will also see any lint errors in the console.  
 
