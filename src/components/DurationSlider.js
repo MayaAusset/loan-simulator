@@ -4,8 +4,9 @@ import { Slider } from "@material-ui/core";
 const DurationSlider = ({ handleLoanDuration }) => {
   const [duration, setDuration] = useState(2, 12);
 
-  const updateDuration = (e, data) => {
-    setDuration(data);
+  const updateDuration = (e, durationInput) => {
+    setDuration(durationInput);
+    handleLoanDuration(durationInput)
   };
   return (
     <div>
@@ -21,7 +22,7 @@ const DurationSlider = ({ handleLoanDuration }) => {
             step={1}
             value={duration}
             onChange={updateDuration}
-            handledurationPrêt={handleLoanDuration(duration)}
+            //andledurationPrêt={}
           />
           <p>12 mois</p>
         </div>

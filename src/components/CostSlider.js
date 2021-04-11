@@ -4,8 +4,9 @@ import { Slider } from "@material-ui/core";
 const CostSlider = ({ handleLoanAmount }) => {
   const [cost, setCost] = useState(1000, 10000);
 
-  const updateCost = (e, data) => {
-    setCost(data);
+  const updateCost = (e, costInput) => {
+    setCost(costInput);
+    handleLoanAmount(costInput);
   };
   return (
     <div className="slider">
@@ -20,7 +21,7 @@ const CostSlider = ({ handleLoanAmount }) => {
           step={1000}
           value={cost}
           onChange={updateCost}
-          handleLoanAmount={handleLoanAmount(cost)}
+          //handleLoanAmount={handleLoanAmount(cost)}
         />
         <p>10 000 €</p>
       </div>
