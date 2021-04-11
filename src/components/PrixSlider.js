@@ -9,7 +9,7 @@ const PrixSlider = ({handleMontantPrêt}) => {
     }
     return (
         <div className="slider">
-            <h4>Je souhaite emprunter {prix} euros</h4>
+            <h4>Je souhaite emprunter <span>{prix} euros</span></h4>
             <div className="slider-bar">
             <p>1000 €</p>
             <Slider
