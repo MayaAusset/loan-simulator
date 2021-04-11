@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import Titre from "./components/Titre";
+import Title from "./components/Title";
 import Button from "./components/Button";
-import SimulationPrêt from "./components/SimulationPrêt";
+import LoanSimulator from "./components/LoanSimulator";
 
 function App() {
   const [showSimulation, setShowSimulation] = useState(false);
@@ -13,11 +13,11 @@ function App() {
 
   return (
     <div className="App">
-      <Titre />
+      <Title />
       {!showSimulation ? (
         <Button handleSimulation={handleSimulation} />
       ) : (
-        <SimulationPrêt />
+        <LoanSimulator />
       )}
     </div>
   );

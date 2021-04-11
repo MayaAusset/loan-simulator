@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Slider } from "@material-ui/core";
 
-const PrixSlider = ({ handleMontantPrêt }) => {
-  const [prix, setPrix] = useState(1000, 10000);
+const CostSlider = ({ handleLoanAmount }) => {
+  const [cost, setCost] = useState(1000, 10000);
 
-  const updatePrix = (e, data) => {
-    setPrix(data);
+  const updateCost = (e, costInput) => {
+    setCost(costInput);
+    handleLoanAmount(costInput);
   };
   return (
     <div className="slider">
       <h4>
-        Je souhaite emprunter <span>{prix} €</span>
+        Je souhaite emprunter <span>{cost} €</span>
       </h4>
       <div className="slider-bar">
         <p>1000 €</p>
@@ -18,9 +19,8 @@ const PrixSlider = ({ handleMontantPrêt }) => {
           min={1000}
           max={10000}
           step={1000}
-          value={prix}
-          onChange={updatePrix}
-          handleMontantPrêt={handleMontantPrêt(prix)}
+          value={cost}
+          onChange={updateCost}
         />
         <p>10 000 €</p>
       </div>
@@ -28,4 +28,4 @@ const PrixSlider = ({ handleMontantPrêt }) => {
   );
 };
 
-export default PrixSlider;
+export default CostSlider;
