@@ -21,7 +21,6 @@ const CostSlider = ({ handleLoanAmount }) => {
           step={1000}
           value={cost}
           onChange={updateCost}
-          //handleLoanAmount={handleLoanAmount(cost)}
         />
         <p>10 000 €</p>
       </div>

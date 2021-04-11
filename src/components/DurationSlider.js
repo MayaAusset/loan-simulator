@@ -6,7 +6,7 @@ const DurationSlider = ({ handleLoanDuration }) => {
 
   const updateDuration = (e, durationInput) => {
     setDuration(durationInput);
-    handleLoanDuration(durationInput)
+    handleLoanDuration(durationInput);
   };
   return (
     <div>
@@ -22,7 +22,6 @@ const DurationSlider = ({ handleLoanDuration }) => {
             step={1}
             value={duration}
             onChange={updateDuration}
-            //andledurationPrêt={}
           />
           <p>12 mois</p>
         </div>

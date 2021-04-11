@@ -7,12 +7,12 @@ const LoanSimulator = () => {
   const [loanAmount, setloanAmount] = useState(1000);
   const [loanDuration, setLoanDuration] = useState(2);
 
-  const handleLoanAmount = (montant) => {
-    setloanAmount(montant);
+  const handleLoanAmount = (amount) => {
+    setloanAmount(amount);
   };
 
-  const handleLoanDuration = (durée) => {
-    setLoanDuration(durée);
+  const handleLoanDuration = (duration) => {
+    setLoanDuration(duration);
   };
 
   return (
@@ -22,7 +22,10 @@ const LoanSimulator = () => {
         <DurationSlider handleLoanDuration={handleLoanDuration} />
       </div>
       <div className="resultat-container">
-        <SimulationResults loanAmount={loanAmount} loanDuration={loanDuration} />
+        <SimulationResults
+          loanAmount={loanAmount}
+          loanDuration={loanDuration}
+        />
       </div>
     </main>
   );
