@@ -2,10 +2,10 @@ import React from 'react';
 import { Slider } from "@material-ui/core";
 
 
-const SliderWrapper = ({minval, maxval, min, max, step, value, onChange}) => {
+const SliderWrapper = ({type, min, max, step, value, onChange}) => {
     return (
         <div className="slider-bar">
-        <p>{minval}</p>
+        <p>{min} {type}</p>
         <Slider
           min={min}
           max={max}
@@ -13,7 +13,7 @@ const SliderWrapper = ({minval, maxval, min, max, step, value, onChange}) => {
           value={value}
           onChange={onChange}
         />
-        <p>{maxval}</p>
+        <p>{max} {type}</p>
       </div>
     );
 };

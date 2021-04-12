@@ -13,8 +13,7 @@ const DurationSlider = ({ handleLoanDuration }) => {
     <div className="slider">
       <SliderText text={"sur une durée de"} amount={duration} value={"mois"} />
       <SliderWidget
-        minval={"2 mois"}
-        maxval={"12 mois"}
+        type={"mois"}
         min={2}
         max={12}
         step={1}
