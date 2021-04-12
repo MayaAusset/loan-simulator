@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import CostSlider from "./CostSlider";
-import DurationSlider from "./DurationSlider";
+import SliderContainer from "./SliderContainer";
 import SimulationResults from "./SimulationResults";
 
 const LoanSimulator = () => {
@@ -18,8 +17,10 @@ const LoanSimulator = () => {
   return (
     <main>
       <div className="sliders-container">
-        <CostSlider handleLoanAmount={handleLoanAmount} />
-        <DurationSlider handleLoanDuration={handleLoanDuration} />
+        <SliderContainer
+          handleLoanAmount={handleLoanAmount}
+          handleLoanDuration={handleLoanDuration}
+        />
       </div>
       <div className="resultat-container">
         <SimulationResults
