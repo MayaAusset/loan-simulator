@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SliderWrapper from "./SliderWrapper";
+import SliderWidget from "./SliderWidget";
 import SliderText from "./SliderText";
 
 const CostSlider = ({ handleLoanAmount }) => {
@@ -12,9 +12,9 @@ const CostSlider = ({ handleLoanAmount }) => {
   return (
     <div className="slider">
       <SliderText text={"Je souhaite emprunter"} amount={cost} value={"€"} />
-      <SliderWrapper
+      <SliderWidget
         minval={"1000 €"}
-        maxval={"10 000€"}
+        maxval={"10 000 €"}
         min={1000}
         max={10000}
         step={1000}
