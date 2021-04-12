@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Slider } from "@material-ui/core";
+import SliderWrapper from "./SliderWrapper";
+import SliderText from "./SliderText";
 
 const CostSlider = ({ handleLoanAmount }) => {
-  const [cost, setCost] = useState(1000, 10000);
+  const [cost, setCost] = useState(1000);
 
   const updateCost = (e, costInput) => {
     setCost(costInput);
@@ -10,20 +11,16 @@ const CostSlider = ({ handleLoanAmount }) => {
   };
   return (
     <div className="slider">
-      <h4>
-        Je souhaite emprunter <span>{cost} €</span>
-      </h4>
-      <div className="slider-bar">
-        <p>1000 €</p>
-        <Slider
-          min={1000}
-          max={10000}
-          step={1000}
-          value={cost}
-          onChange={updateCost}
-        />
-        <p>10 000 €</p>
-      </div>
+      <SliderText amount={cost} value={"€"} />
+      <SliderWrapper
+        minval={"1000 €"}
+        maxval={"10 000€"}
+        min={1000}
+        max={10000}
+        step={1000}
+        value={cost}
+        onChange={updateCost}
+      />
     </div>
   );
 };
