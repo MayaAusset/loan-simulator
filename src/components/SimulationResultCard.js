@@ -11,7 +11,7 @@ const SimulationResultCard = ({
     <>
       <div className="results">
         <p>
-          <span>{loanAmount} € </span>+ cout du crédit ({creditCost}€) =
+          <span>{loanAmount} € </span>+ coût du crédit ({creditCost}€) =
           <span> {totalAmount} €</span> sur <span>{loanDuration} mois</span>
         </p>
       </div>
