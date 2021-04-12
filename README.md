@@ -30,6 +30,7 @@ Run the following commands
 ```
 $ git clone https://github.com/MayaAusset/loanSimulator.git 
 $ cd loanSimulator
+$ npm install
 $ npm start
 ```
 
