@@ -4,7 +4,7 @@ import SimulationResults from "./SimulationResults";
 
 const LoanSimulator = () => {
   const [loanAmount, setloanAmount] = useState(1000);
-  const [loanDuration, setLoanDuration] = useState(2);
+  const [loanDuration, setLoanDuration] = useState(3);
 
   const handleLoanAmount = (amount) => {
     setloanAmount(amount);
