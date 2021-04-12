@@ -13,8 +13,7 @@ const CostSlider = ({ handleLoanAmount }) => {
     <div className="slider">
       <SliderText text={"Je souhaite emprunter"} amount={cost} value={"€"} />
       <SliderWidget
-        minval={"1000 €"}
-        maxval={"10 000 €"}
+        type={"€"}
         min={1000}
         max={10000}
         step={1000}
