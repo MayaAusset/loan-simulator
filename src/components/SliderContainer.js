@@ -2,7 +2,7 @@ import React from "react";
 import CostSlider from "./CostSlider";
 import DurationSlider from "./DurationSlider";
 
-const SliderContainer = ({handleLoanAmount,handleLoanDuration}) => {
+const SliderContainer = ({ handleLoanAmount, handleLoanDuration }) => {
   return (
     <div>
       <CostSlider handleLoanAmount={handleLoanAmount} />
