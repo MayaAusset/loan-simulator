@@ -1,7 +1,7 @@
 # Loan Simulator
 [Check out the deployed version](https://loansimulator-oc.netlify.app/)
 
-<img width="1339" alt="Screenshot 2021-04-12 at 09 57 20" src="https://user-images.githubusercontent.com/60138632/114360852-cb58b780-9b75-11eb-8286-2cb371c8ae0f.png">
+<img width="1196" alt="Screenshot 2021-04-12 at 11 20 37" src="https://user-images.githubusercontent.com/60138632/114371878-3c519c80-9b81-11eb-908a-419addbd5d87.png">
 
 ## Table of contents
 * [General info](#general-info)
