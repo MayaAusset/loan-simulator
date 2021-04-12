@@ -11,7 +11,7 @@ const CostSlider = ({ handleLoanAmount }) => {
   };
   return (
     <div className="slider">
-      <SliderText amount={cost} value={"€"} />
+      <SliderText text={"Je souhaite emprunter"} amount={cost} value={"€"} />
       <SliderWrapper
         minval={"1000 €"}
         maxval={"10 000€"}
