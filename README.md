@@ -1,9 +1,17 @@
 # Loan Simulator
+[Loan Simulator](https://loansimulator-oc.netlify.app/)
+
+<img width="1339" alt="Screenshot 2021-04-12 at 09 57 20" src="https://user-images.githubusercontent.com/60138632/114360852-cb58b780-9b75-11eb-8286-2cb371c8ae0f.png">
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)  
 
 ## General info 
 This app is a loan simulator created with create-react-app.
 
-## Technologies used 
+## Technologies
 -ReactJS  
 -JavaScript  
 -HTML  
